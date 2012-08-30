@@ -1,0 +1,36 @@
+#Lines started with '#' are comments lines and are ignored
+#The first line to be processed must be the type line
+#Therefore every line must be either a comment line or 
+#a line with proper formatting
+#For the formats following in the comments, a SSSS represents a string
+# and a ### represents a positive integer
+#The type line has the following format
+#Type=###
+#1 represents a problem defined with states, defined by features, and actions
+#2 represents a problem with states, without features, and actions
+Type=1
+#After type comes the problem description
+#The next non-comment line must be a tag
+#Possible tags are:
+#[Features] only if type was set to 1
+#[States] only if type was set to 2
+#[Actions] for any type
+[Features]
+#Each feature is described in a single line, the description must be written
+#in the following format
+#ID=SSSS;Min=###;Max=###
+ID=X;Min=0;Max=4
+ID=Y;Min=0;Max=4
+#After all items are described the next non-comment line must be one
+#of the remaining tags depending on the type of problem description selected
+#Tags must not be repeated
+[Actions]
+#Following an actions tag comes the definition of all available actions
+#Each definition must be in the following format
+#Action=SSSS
+Action=UP
+Action=DOWN
+Action=LEFT
+Action=RIGHT
+
+

@@ -1,0 +1,20 @@
+#A comment line is preceded by a '#' symbol
+#In every automatically generated file the first line  
+#will be the following comment line:
+#"This file has been automatically generated"
+#Next there will be a line indicating the type of
+#information contained in the file, in this case:
+#"This file contains learned Q-values"
+#Next comes the type of problem, that is either 1 or 2
+Type=#
+#The next line is a tag indicating the start of 
+#the Q-Values information
+[Q-Values]
+#Then each line will contain a state ID 
+#separated by a ';' from the action and
+#then another ';' before the associated Q-Value
+STATE 1 ; MOVE ; Q-Value= 0.32
+STATE 1 ; DANCE ; Q-Value= 0.40
+
+
+	
