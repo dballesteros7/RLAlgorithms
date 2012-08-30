@@ -1,0 +1,10 @@
+#This file describes the states and actions for the windyGridWorld
+Type=1
+[Features]
+ID=X-Coordinate;Min=0;Max=9
+ID=Y-Coordinate;Min=0;Max=6
+[Actions]
+Action=UP
+Action=DOWN
+Action=LEFT
+Action=RIGHT
